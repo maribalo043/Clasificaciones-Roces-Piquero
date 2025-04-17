@@ -1,0 +1,252 @@
+/* Estilos generales para el fondo y el contenedor del formulario */
+.fondo {
+    background-color: #f0f8ff; /* Color de fondo claro */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 1); /* Fondo blanco sólido */
+    border-radius: 10px; /* Bordes redondeados */
+    border: solid rgb(118, 118, 118, 0.8) 7.25px;
+    padding: 0px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 1); /* Sombra más profunda */
+    max-width: 800px; /* Aumenta el máximo ancho del formulario */
+    width: 80%; /* Para mejor responsividad */
+    max-height: 90vh; /* Altura máxima de la tarjeta */
+    overflow-y: auto; /* Habilitar scroll si el contenido es más alto */
+}
+
+/* Personalizar la barra de desplazamiento de .overlay */
+.overlay::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.overlay::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Color de fondo de la pista */
+    border-radius: 10px; /* Bordes redondeados en la pista */
+}
+
+.overlay::-webkit-scrollbar-thumb {
+    background: #c4c4c4; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados en la barra */
+}
+
+/* Efecto al pasar el ratón sobre la barra de desplazamiento */
+.overlay::-webkit-scrollbar-thumb:hover {
+    background: #828282; /* Color más oscuro al pasar el ratón */
+}
+
+
+/* Estilos para los encabezados */
+h2 {
+    text-align: center; /* Centra el texto */
+    color: #007bff; /* Color azul de Bootstrap */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h4 {
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 10px; /* Espacio inferior */
+    color: #495057; /* Color gris oscuro */
+}
+
+/* Estilo para los campos del formulario */
+.form-group {
+    margin-bottom: 15px; /* Espaciado entre los campos */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Transición suave */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul */
+}
+
+/* Estilo para los fieldsets de los jugadores */
+fieldset {
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+    padding: 15px; /* Espaciado interno */
+    width: 50%;
+    width: calc(45% - 1rem)
+}
+
+legend {
+    font-weight: bold; /* Negrita para el título del fieldset */
+    color: #007bff; /* Color azul */
+}
+
+/* Estilo para los botones */
+.btn {
+    width: 48%; /* Botones con el mismo ancho */
+    margin: 5px 1%; /* Espaciado entre botones */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color de fondo del botón primario */
+    border: none; /* Sin borde */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Color de fondo del botón secundario */
+    border: none; /* Sin borde */
+}
+
+/* Estilo para el checkbox */
+.form-check-label {
+    margin-left: 10px; /* Espacio a la izquierda del texto */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body, html {
+    height: 100%;
+    background: linear-gradient(to bottom, red, black);
+}
+
+.fondo {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, red, black);
+}
+
+/* Overlay para el título y los botones */
+.overlay {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar perfectamente */
+    text-align: center; /* Centra el texto */
+    z-index: 2; /* Asegura que esté por encima de las fotos */
+}
+
+.botones {
+    display: flex;
+    flex-direction: column; /* Disposición vertical */
+    gap: 1rem; /* Espacio entre botones */
+}
+
+.btn {
+    padding: 0.75rem 1.5rem; /* Espaciado interno de los botones */
+    font-size: 1.2rem; /* Tamaño de la fuente de los botones */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición para el hover */
+}
+
+.btn:hover {
+    background-color: rgba(255, 0, 0, 0.8); /* Cambia a rojo al pasar el ratón */
+}
+
+/* Estilo general de las fotos */
+.foto {
+    width: 25vw; /* Cada foto ocupa el 25% del ancho */
+    height: 100vh; /* Altura completa */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Clip-path solo para la primera y última foto */
+.foto1 {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.foto2,
+.foto3 {
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.foto4 {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Sustitución de imágenes */
+.foto1 {
+    background-image: url('../img/imagen1.JPG');
+}
+
+.foto2 {
+    background-image: url('../img/imagen2.JPG');
+}
+
+.foto3 {
+    background-image: url('../img/imagen3.JPG');
+}
+
+.foto4 {
+    background-image: url('../img/imagen4.JPG');
+}
+
+/* No queremos línea en la última foto */
+.foto:last-child::after {
+    display: none;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .foto {
+        width: 50vw; /* Cambia el ancho en pantallas pequeñas */
+    }
+    
+    h1 {
+        font-size: 2.5rem; /* Tamaño reducido para el título */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Tamaño reducido para el subtítulo */
+    }
+
+    .btn {
+        font-size: 1rem; /* Tamaño reducido para los botones */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Tamaño aún más reducido para pantallas muy pequeñas */
+    }
+    
+    h2 {
+        font-size: 1.2rem; /* Tamaño aún más reducido para pantallas muy pequeñas */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Tamaño aún más reducido para botones en pantallas muy pequeñas */
+    }
+}
+/* Vista para móviles: fieldset en columna */
+@media screen and (max-width: 768px) {
+    #players-container {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los fieldset en columna */
+        padding: 0;
+    }
+
+    fieldset {
+        width: 60vw; /* Asegura que ocupen todo el ancho disponible */
+        margin-bottom: 1rem; /* Espaciado entre los fieldset */
+    }
+}

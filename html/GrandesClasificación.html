@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0BJTZ337EV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0BJTZ337EV");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partidos y Clasificación del Torneo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styleClasificaciones.css"/>
+    <link rel="icon" href="/img/EscudoPatinalon.png" type="image">
+
+    <script defer src="/js/2GuajesClasificaciones.js"></script>
+</head>
+
+<body>
+    <!-- Barra de navegación centrada y destacada -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid justify-content-center">
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Categorías a la izquierda -->
+                <ul class="navbar-nav nav-categories navbar-brand mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/PequeñosClasificacion.html">Pequeños</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/GrandesClasificación.html">Grandes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <!-- Mini formulario para seleccionar día y grupo -->
+        <div class="row mb-4 formulario">
+            <div class="col-md-6">
+                <label for="select-dia" class="form-label" hidden>Seleccionar día:</label>
+                <select class="form-select" id="select-dia" hidden>
+                    <option value="dia1">Viernes 27</option>
+                    <option value="dia2">Sabado 28</option>
+                    <option value="dia3">Domingo 29 (Finales)</option>
+                </select>
+            </div>
+            <button type="button" id="enviar" class="btn btn-primary mt-3" hidden>Buscar</button>
+        </div>
+
+        <!-- Tabla de partidos -->
+        <h1>GRANDES</h1>
+        <h3>Partidos del Torneo</h3>
+        <table id="tabla-partidos" class="table table-striped table-bordered">
+            <thead>
+                <tr class="coloridoGuajes">
+                    <th colspan="6" id="nombreGrupo">Grupo</th>
+                </tr>
+                <tr class="coloridoGuajes">
+                    <th>Local</th>
+                    <th>Resultado</th>
+                    <th>Visitante</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoGrupo" class="cuerpoGrupo"></tbody>
+        </table>
+
+        <!-- Tabla de clasificación -->
+        <h3 id="tituloClasificaciones">Clasificación de Equipos</h3>
+        <table id="tablaClasificacion" class="table table-striped table-bordered">
+            <thead>
+                <tr class="coloridoGuajes">
+                    <th colspan="8" id="clasificacionGrupo">Clasificación Grupo</th>
+                </tr>
+                <tr class="coloridoGuajes">
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                    <th>P</th>
+                    <th>PG</th>
+                    <th>PP</th>
+                    <th>PE</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoClasif" class="cuerpoClasif"></tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

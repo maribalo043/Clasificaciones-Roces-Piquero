@@ -1,0 +1,100 @@
+/* Estilos personalizados para la barra de navegación */
+.navbar-custom {
+    background-color: #343a40; /* Fondo oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra */
+    border-bottom: 3px solid #ff5733; /* Borde inferior */
+}
+
+.navbar-custom .nav-link {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ff5733; /* Color de hover */
+}
+
+.navbar-brand .imgLogo {
+    height: 75px; /* Ajustar tamaño del logo */
+}
+
+.nav-categories {
+    display: flex;
+    gap: 15px; /* Espacio entre categorías */
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.nav-item,
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos para los botones de categoría */
+.btn {
+    width: 70%;
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-family: 'Poppins', sans-serif; /* Tipo de fuente atractivo */
+    transition: all 0.3s ease; /* Efecto suave para hover */
+}
+
+.coloridoMini {
+    background-color: rgb(215, 119, 35);
+    color: black;
+    border: 2.5px solid black;
+}
+
+.coloridoGuajes {
+    background-color: rgb(201, 201, 0);
+    color: black;
+    border: 2.5px solid black;
+}
+
+.coloridoPromesas {
+    background-color: rgb(204, 0, 0);
+    color: black;
+    border: 2.5px solid black;
+}
+
+.coloridoEstrellas {
+    background-color: rgb(25, 191, 0);
+    color: black;
+    border: 2.5px solid black;
+}
+
+.coloridoMasters {
+    background-color: rgb(51, 51, 253);
+    color: white;
+    border: 2.5px solid black;
+}
+
+/* Hover para los botones */
+.btn:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    cursor: pointer;
+}
+
+/* Media queries */
+@media (max-width: 400px) {
+    .table {
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        -webkit-overflow-scrolling: touch; /* Mejora la experiencia de scroll en dispositivos táctiles */
+    }
+
+    table {
+        width: 100%; /* Mantiene el ancho de la tabla completo dentro del contenedor */
+    }
+}

@@ -1,0 +1,179 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body, html {
+    height: 100%;
+    background: linear-gradient(to bottom, red, black);
+    font-family: 'Arial', sans-serif;
+}
+
+.fondo {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Overlay mejorado para el título y los botones */
+.overlay {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out; /* Animación suave de entrada */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.75rem;
+    background-color: rgba(255, 0, 0, 0.6);
+    border: 2.5px solid black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover en el título */
+h1:hover {
+    transform: scale(1.05); /* Efecto de ampliación */
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(255, 0, 0, 0.6);
+    border: 2.5px solid black;
+    border-radius: 50px;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover en el subtítulo */
+h2:hover {
+    transform: scale(1.05); /* Efecto de ampliación */
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+/* Botones mejorados */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Mayor espacio entre botones */
+    align-items: center; /* Centrar los botones */
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 10px; /* Bordes más redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto hover para los botones */
+.btn:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+/* Efecto para el clic en el botón */
+.btn:active {
+    transform: translateY(-2px);
+}
+
+/* Estilo general de las fotos */
+.foto {
+    width: 25vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Imagen 1 - sin borde izquierdo */
+.foto1 {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    object-fit: cover;
+}
+
+/* Imagen 2 - sin borde derecho */
+.foto2 {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    object-fit: cover;
+}
+
+/* Imágenes */
+.foto1 {
+    background-image: url('../img/Imagen\ Sara.webp');
+}
+
+.foto2 {
+    background-image: url('../img/Imagen\ marta\ piquero.jpg');
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .foto {
+        width: 50vw;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
