@@ -1,4 +1,4 @@
-function actualizarResultadosConPartido(partido) {
+ function actualizarResultadosConPartido(partido) {
     var equipo1 = partido.equipo1;
     var equipo2 = partido.equipo2;
     var resultado = partido.resultado;
@@ -180,7 +180,7 @@ var partido114 = new Partido(mariscos,yogures,null,"00","Pista 1");
 var partido115 = new Partido(chanclas,zapatos,null,"00","Pista 1");
 
 /*Grupos y su ordenación*/
-var ordenGrupo = [Superninios,Estrellas,Mejores,Pitufos,Chipirones,Vencedores];
+var ordenGrupo = [arbol,mariscos,igual,chanclas,zapatos,yogures];
 // Ordenar grupos después de actualizar resultados
 ordenarGrupos(ordenGrupo);
 
