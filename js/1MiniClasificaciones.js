@@ -164,15 +164,15 @@ var Vencedores = new Equipo("Los Vencedores");
 
 // Crear instancias de partidos después de crear instancias de equipos
 /*Partidos VIERNES 27 Diciembre*/
-var partido11 = new Partido(Superninios,Estrellas,null,"00","Pista 1");
-var partido12 = new Partido(Mejores,Pitufos,null,"00","Pista 1");
-var partido13 = new Partido(Chipirones,Vencedores,null,"00","Pista 1");
-var partido14 = new Partido(Estrellas,Pitufos,null,"00","Pista 1");
-var partido15 = new Partido(Vencedores,Superninios,null,"00","Pista 1");
-var partido16 = new Partido(Mejores,Chipirones,null,"00","Pista 1");
-var partido17 = new Partido(Superninios,Pitufos,null,"00","Pista 1");
-var partido18 = new Partido(Estrellas,Mejores,null,"00","Pista 1");
-var partido19 = new Partido(Pitufos,Vencedores,null,"00","Pista 1");
+var partido11 = new Partido(Superninios,Estrellas,'2-5',"00","Pista 1");
+var partido12 = new Partido(Mejores,Pitufos,'3-5',"00","Pista 1");
+var partido13 = new Partido(Chipirones,Vencedores,'1-3',"00","Pista 1");
+var partido14 = new Partido(Estrellas,Pitufos,'1-4',"00","Pista 1");
+var partido15 = new Partido(Vencedores,Superninios,'2-0',"00","Pista 1");
+var partido16 = new Partido(Mejores,Chipirones,'4-1',"00","Pista 1");
+var partido17 = new Partido(Superninios,Pitufos,'0-4',"00","Pista 1");
+var partido18 = new Partido(Estrellas,Mejores,'0-3',"00","Pista 1");
+var partido19 = new Partido(Pitufos,Vencedores,'0-2',"00","Pista 1");
 var partido110 = new Partido(Estrellas,Chipirones,null,"00","Pista 1");
 var partido111 = new Partido(Superninios,Mejores,null,"00","Pista 1");
 var partido112 = new Partido(Pitufos,Chipirones,null,"00","Pista 1");
