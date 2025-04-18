@@ -154,30 +154,30 @@ function mensajePartido() {
 }
 
 // Crear instancias de equipos
-var Superninios = new Equipo("Arbol");
-var Estrellas = new Equipo("Mariscos Recio");
-var Mejores = new Equipo("A mi me da igual");
-var Pitufos = new Equipo("Las chanclas");
-var Chipirones = new Equipo("Los zapatos");
-var Vencedores = new Equipo("Los yogures");
+var arbol = new Equipo("Arbol");
+var mariscos = new Equipo("Mariscos Recio");
+var igual = new Equipo("A mi me da igual");
+var chanclas = new Equipo("Las chanclas");
+var zapatos = new Equipo("Los zapatos");
+var yogures = new Equipo("Los yogures");
 
 // Crear instancias de partidos después de crear instancias de equipos
 /*Partidos VIERNES 27 Diciembre*/
-var partido11 = new Partido(Superninios,Estrellas,'3-2',"00","Pista 1");
-var partido12 = new Partido(Mejores,Pitufos,'0-2',"00","Pista 1");
-var partido13 = new Partido(Chipirones,Vencedores,'2-4',"00","Pista 1");
-var partido14 = new Partido(Estrellas,Pitufos,'1-1',"00","Pista 1");
-var partido15 = new Partido(Vencedores,Superninios,'0-3',"00","Pista 1");
-var partido16 = new Partido(Mejores,Chipirones,null,"00","Pista 1");
-var partido17 = new Partido(Superninios,Pitufos,null,"00","Pista 1");
-var partido18 = new Partido(Estrellas,Mejores,null,"00","Pista 1");
-var partido19 = new Partido(Pitufos,Vencedores,null,"00","Pista 1");
-var partido110 = new Partido(Estrellas,Chipirones,null,"00","Pista 1");
-var partido111 = new Partido(Superninios,Mejores,null,"00","Pista 1");
-var partido112 = new Partido(Pitufos,Chipirones,null,"00","Pista 1");
-var partido113 = new Partido(Mejores,Vencedores,null,"00","Pista 1");
-var partido114 = new Partido(Chipirones,Superninios,null,"00","Pista 1");
-var partido115 = new Partido(Vencedores,Estrellas,null,"00","Pista 1");
+var partido11 = new Partido(arbol,mariscos,'3-2',"00","Pista 1");
+var partido12 = new Partido(igual,chanclas,'0-2',"00","Pista 1");
+var partido13 = new Partido(zapatos,yogures,'2-4',"00","Pista 1");
+var partido14 = new Partido(arbol,chanclaa,'1-1',"00","Pista 1");
+var partido15 = new Partido(igual,yogures,'0-3',"00","Pista 1");
+var partido16 = new Partido(zapatos,mariscos,'0-1',"00","Pista 1");
+var partido17 = new Partido(arbol,yogures,null,"00","Pista 1");
+var partido18 = new Partido(igual,zapatos,null,"00","Pista 1");
+var partido19 = new Partido(chanclas,mariscos,null,"00","Pista 1");
+var partido110 = new Partido(arbol,zapatos,null,"00","Pista 1");
+var partido111 = new Partido(igual,mariscos,null,"00","Pista 1");
+var partido112 = new Partido(chanclas,yogures,null,"00","Pista 1");
+var partido113 = new Partido(arbol,igual,null,"00","Pista 1");
+var partido114 = new Partido(mariscos,yogures,null,"00","Pista 1");
+var partido115 = new Partido(chanclas,zapatos,null,"00","Pista 1");
 
 /*Grupos y su ordenación*/
 var ordenGrupo = [Superninios,Estrellas,Mejores,Pitufos,Chipirones,Vencedores];
